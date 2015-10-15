@@ -494,7 +494,21 @@ Contrast this with what happens in a relational database, where the table must t
 
 <p>As for the other two answers, MongoDB does not support joins as a design decision because they do not scale horizontally, and it does not support SQL because that query language was built around joins and transactions, and tends to assume table structure rather than the flexible document orientation that MongoDB provides.</p>
 
-<h3 id="toc_4">Building an app with mongoDB</h3>
+<h3 id="toc_4">Relative to relation</h3>
+
+<p>You can pivot Depth of functionality against Scalability and performance</p>
+
+<ul>
+<li>Depth of functionality -&gt; RDMS (Oracle, DB2, etc)</li>
+<li>Scalability &amp; performance -&gt; Memcached, Key Value stores</li>
+<li>As with MongoDB, it is scalable and has deep functionality, but not quite as much as RDBMS.
+
+<ul>
+<li>This is because of lack of support for Joins and Transactions across multiple documents. </li>
+</ul></li>
+</ul>
+
+<h3 id="toc_5">Building an app with mongoDB</h3>
 
 <p>Relevant elements <a href="https://www.youtube.com/watch?v=_e0J06elxb8">»</a></p>
 
@@ -507,7 +521,7 @@ Contrast this with what happens in a relational database, where the table must t
 
 <p><img src="pics/relevant_elements.png" alt="Relevant elements"></p>
 
-<h4 id="toc_5">Mongo Shell</h4>
+<h4 id="toc_6">Mongo Shell</h4>
 
 <p><strong>Last lecture <a target="_blank" href="https://university.mongodb.com/courses/MongoDB/M101P/2015_October/courseware/Chapter_1_Introduction/52546afae2d4231cc6083fd8">»</a></strong></p>
 

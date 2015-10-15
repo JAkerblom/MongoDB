@@ -36,6 +36,14 @@ Contrast this with what happens in a relational database, where the table must t
 
 As for the other two answers, MongoDB does not support joins as a design decision because they do not scale horizontally, and it does not support SQL because that query language was built around joins and transactions, and tends to assume table structure rather than the flexible document orientation that MongoDB provides.
 
+### Relative to relation
+You can pivot Depth of functionality against Scalability and performance
+
+* Depth of functionality -> RDMS (Oracle, DB2, etc)
+* Scalability & performance -> Memcached, Key Value stores
+* As with MongoDB, it is scalable and has deep functionality, but not quite as much as RDBMS.
+	* This is because of lack of support for Joins and Transactions across multiple documents. 
+
 ### Building an app with mongoDB
 
 Relevant elements <a href="https://www.youtube.com/watch?v=_e0J06elxb8">»</a>
